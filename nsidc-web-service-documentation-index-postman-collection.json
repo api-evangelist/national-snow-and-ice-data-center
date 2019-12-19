@@ -1,0 +1,248 @@
+{
+    "id": "ded5ae8dee20004b181d4aa9dec9cb99",
+    "name": "NSIDC Web Service Documentation Index",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c910f7a721b40e1dd90082b83729e158",
+            "name": "View the facet information corresponding to a search",
+            "url": "httpsnsidc.org\/api\/dataset\/2\/Facets",
+            "description": "In the NSIDC Search and Arctic Data Explorer interfaces, this endpoint is used in conjunction with \/OpenSearch whenever a user submits a new search. Consequently, it has the same parameters as \/OpenSearch.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchTerms",
+                    "description": "URL-encoded keyword or keywords desired by the client; OpenSearch 1.1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of search results per page desired by the client; OpenSearch 1.1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startIndex",
+                    "description": "First search result desired by the search client; OpenSearch 1.1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "spatial",
+                    "description": "4 comma separated values - W, S, E, N; OpenSearch-Geo 1.0, \"box\" parameter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortKeys",
+                    "description": "Sort the results by most relevant (default), smallest or largest spatial area, shortest or longest temporal duration, or most recently updated; partial implementation of OpenSearch SRU 1.0",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "The start date in yyyy-mm-dd format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "The end date in yyyy-mm-dd format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "facetFilters",
+                    "description": "Describes faceted restrictions on the search. A URL-encoded JSON object where the keys are the names of the facet, and the values are arrays of the selected facet values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Custom parameter for selecting which source to use; the Arctic Data Explorer (ADE) uses data aggregated from many sources, including, but not limited to, NSIDC",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "rawModeData": ""
+        },
+        {
+            "id": "02a4a296b66b52aa3a6b7c8588f65fc5",
+            "name": "Search documents using the OpenSearch 1.1 Specification",
+            "url": "httpsnsidc.org\/api\/dataset\/2\/OpenSearch",
+            "description": "This endpoint uses parameters from the OpenSearch 1.1 specification, as well as parameters from the OpenSearch Geo (1.0) and SRU (1.0) extensions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchTerms",
+                    "description": "URL-encoded keyword or keywords desired by the client; OpenSearch 1.1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of search results per page desired by the client; OpenSearch 1.1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startIndex",
+                    "description": "First search result desired by the search client; OpenSearch 1.1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "spatial",
+                    "description": "4 comma separated values - W, S, E, N; OpenSearch-Geo 1.0, \"box\" parameter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortKeys",
+                    "description": "Sort the results by most relevant (default), smallest or largest spatial area, shortest or longest temporal duration, or most recently updated; partial implementation of OpenSearch SRU 1.0",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "The start date in yyyy-mm-dd format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "The end date in yyyy-mm-dd format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "facetFilters",
+                    "description": "Describes faceted restrictions on the search. A URL-encoded JSON object where the keys are the names of the facet, and the values are arrays of the selected facet values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Custom parameter for selecting which source to use; the Arctic Data Explorer (ADE) uses data aggregated from many sources, including, but not limited to, NSIDC",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b2f833c63bdd38d2e56de7cac4afada",
+            "name": "Describes the web interface of NSIDC's data search engine",
+            "url": "httpsnsidc.org\/api\/dataset\/2\/OpenSearchDescription",
+            "description": "Describes the web interface of NSIDC's data search engine",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc7c5e2e7d8546883bc86de2eb5ce7d0",
+            "name": "Suggest search terms based on a partial query",
+            "url": "httpsnsidc.org\/api\/dataset\/2\/suggest",
+            "description": "In NSIDC Search and the Arctic Data Explorer, this endpoint is queried whenever the user types into the search terms box, and the returned suggestions are displayed in a dropdown beneath the search terms box. The q parameter and returned JSON follow the specifications of the OpenSearch Suggestions 1.0 extension.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search terms typed into the interface (minimum two characters)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Custom parameter for selecting which source to use; the Arctic Data Explorer (ADE) uses data aggregated from many sources, including, but not limited to, NSIDC",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "rawModeData": ""
+        }
+    ]
+}
