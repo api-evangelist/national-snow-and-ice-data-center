@@ -1,0 +1,156 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "NSIDC Web Service Documentation Index",
+        "description": "This API allows programmers to build National Snow and Ice Data Center data and metadata services into their applications.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsnsidc.org\/api\/dataset\/2"
+    ],
+    "paths": {
+        "\/Facets": {
+            "get": {
+                "summary": "View the facet information corresponding to a search",
+                "description": "In the NSIDC Search and Arctic Data Explorer interfaces, this endpoint is used in conjunction with \/OpenSearch whenever a user submits a new search. Consequently, it has the same parameters as \/OpenSearch.",
+                "operationId": "Facets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "searchTerms",
+                        "in": "query",
+                        "description": "URL-encoded keyword or keywords desired by the client; OpenSearch 1.1"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of search results per page desired by the client; OpenSearch 1.1"
+                    },
+                    {
+                        "name": "startIndex",
+                        "in": "query",
+                        "description": "First search result desired by the search client; OpenSearch 1.1"
+                    },
+                    {
+                        "name": "spatial",
+                        "in": "query",
+                        "description": "4 comma separated values - W, S, E, N; OpenSearch-Geo 1.0, \"box\" parameter"
+                    },
+                    {
+                        "name": "sortKeys",
+                        "in": "query",
+                        "description": "Sort the results by most relevant (default), smallest or largest spatial area, shortest or longest temporal duration, or most recently updated; partial implementation of OpenSearch SRU 1.0"
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "The start date in yyyy-mm-dd format"
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": "The end date in yyyy-mm-dd format"
+                    },
+                    {
+                        "name": "facetFilters",
+                        "in": "query",
+                        "description": "Describes faceted restrictions on the search. A URL-encoded JSON object where the keys are the names of the facet, and the values are arrays of the selected facet values"
+                    },
+                    {
+                        "name": "source",
+                        "in": "query",
+                        "description": "Custom parameter for selecting which source to use; the Arctic Data Explorer (ADE) uses data aggregated from many sources, including, but not limited to, NSIDC"
+                    }
+                ]
+            }
+        },
+        "\/OpenSearch": {
+            "get": {
+                "summary": "Search documents using the OpenSearch 1.1 Specification",
+                "description": "This endpoint uses parameters from the OpenSearch 1.1 specification, as well as parameters from the OpenSearch Geo (1.0) and SRU (1.0) extensions.",
+                "operationId": "OpenSearchGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "searchTerms",
+                        "in": "query",
+                        "description": "URL-encoded keyword or keywords desired by the client; OpenSearch 1.1"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of search results per page desired by the client; OpenSearch 1.1"
+                    },
+                    {
+                        "name": "startIndex",
+                        "in": "query",
+                        "description": "First search result desired by the search client; OpenSearch 1.1"
+                    },
+                    {
+                        "name": "spatial",
+                        "in": "query",
+                        "description": "4 comma separated values - W, S, E, N; OpenSearch-Geo 1.0, \"box\" parameter"
+                    },
+                    {
+                        "name": "sortKeys",
+                        "in": "query",
+                        "description": "Sort the results by most relevant (default), smallest or largest spatial area, shortest or longest temporal duration, or most recently updated; partial implementation of OpenSearch SRU 1.0"
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "The start date in yyyy-mm-dd format"
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": "The end date in yyyy-mm-dd format"
+                    },
+                    {
+                        "name": "facetFilters",
+                        "in": "query",
+                        "description": "Describes faceted restrictions on the search. A URL-encoded JSON object where the keys are the names of the facet, and the values are arrays of the selected facet values"
+                    },
+                    {
+                        "name": "source",
+                        "in": "query",
+                        "description": "Custom parameter for selecting which source to use; the Arctic Data Explorer (ADE) uses data aggregated from many sources, including, but not limited to, NSIDC"
+                    }
+                ]
+            }
+        },
+        "\/OpenSearchDescription": {
+            "get": {
+                "summary": "Describes the web interface of NSIDC's data search engine",
+                "description": "Describes the web interface of NSIDC's data search engine",
+                "operationId": "OpenSearchDescriptionGet",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/suggest": {
+            "get": {
+                "summary": "Suggest search terms based on a partial query",
+                "description": "In NSIDC Search and the Arctic Data Explorer, this endpoint is queried whenever the user types into the search terms box, and the returned suggestions are displayed in a dropdown beneath the search terms box. The q parameter and returned JSON follow the specifications of the OpenSearch Suggestions 1.0 extension.",
+                "operationId": "GetSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search terms typed into the interface (minimum two characters)"
+                    },
+                    {
+                        "name": "source",
+                        "in": "query",
+                        "description": "Custom parameter for selecting which source to use; the Arctic Data Explorer (ADE) uses data aggregated from many sources, including, but not limited to, NSIDC"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
