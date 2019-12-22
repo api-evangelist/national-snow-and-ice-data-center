@@ -1,5 +1,5 @@
 {
-    "id": "ded5ae8dee20004b181d4aa9dec9cb99",
+    "id": "a7b89710365cece5587b8446260aa7e8",
     "name": "NSIDC Web Service Documentation Index",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "c910f7a721b40e1dd90082b83729e158",
+            "id": "5ccf84f3b5a279e8bee91dc21076650a",
             "name": "View the facet information corresponding to a search",
             "url": "httpsnsidc.org\/api\/dataset\/2\/Facets",
             "description": "In the NSIDC Search and Arctic Data Explorer interfaces, this endpoint is used in conjunction with \/OpenSearch whenever a user submits a new search. Consequently, it has the same parameters as \/OpenSearch.",
@@ -93,11 +93,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "collectionId": "a7b89710365cece5587b8446260aa7e8",
             "rawModeData": ""
         },
         {
-            "id": "02a4a296b66b52aa3a6b7c8588f65fc5",
+            "id": "de757ad3dc54997e9f9d1e4d3b1cd9c8",
             "name": "Search documents using the OpenSearch 1.1 Specification",
             "url": "httpsnsidc.org\/api\/dataset\/2\/OpenSearch",
             "description": "This endpoint uses parameters from the OpenSearch 1.1 specification, as well as parameters from the OpenSearch Geo (1.0) and SRU (1.0) extensions.",
@@ -180,11 +180,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "collectionId": "a7b89710365cece5587b8446260aa7e8",
             "rawModeData": ""
         },
         {
-            "id": "5b2f833c63bdd38d2e56de7cac4afada",
+            "id": "e14c7f18a5a4a0e3887ac06cfb55c3a5",
             "name": "Describes the web interface of NSIDC's data search engine",
             "url": "httpsnsidc.org\/api\/dataset\/2\/OpenSearchDescription",
             "description": "Describes the web interface of NSIDC's data search engine",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "collectionId": "a7b89710365cece5587b8446260aa7e8",
             "rawModeData": ""
         },
         {
-            "id": "bc7c5e2e7d8546883bc86de2eb5ce7d0",
+            "id": "919c793c574e622b7705f5979e36ad66",
             "name": "Suggest search terms based on a partial query",
             "url": "httpsnsidc.org\/api\/dataset\/2\/suggest",
             "description": "In NSIDC Search and the Arctic Data Explorer, this endpoint is queried whenever the user types into the search terms box, and the returned suggestions are displayed in a dropdown beneath the search terms box. The q parameter and returned JSON follow the specifications of the OpenSearch Suggestions 1.0 extension.",
@@ -241,7 +241,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ded5ae8dee20004b181d4aa9dec9cb99",
+            "collectionId": "a7b89710365cece5587b8446260aa7e8",
             "rawModeData": ""
         }
     ]
