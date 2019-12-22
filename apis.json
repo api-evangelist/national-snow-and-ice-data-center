@@ -11,8 +11,8 @@
         "water",
         "weather"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/national-snow-and-ice-data-center\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -30,13 +30,17 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/nsidc-web-service-documentation-index-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/national-snow-and-ice-data-center\/master\/nsidc-web-service-documentation-index-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Swagger",
             "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28470-2019-09-02-22-50-21.json"
